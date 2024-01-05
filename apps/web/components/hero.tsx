@@ -3,6 +3,7 @@ import {Badge} from "@ui/components/badge";
 import TiltSquare from "@/components/forms/tiltSquare";
 import {Suspense} from "react";
 import SparklesCore from "@/components/effects/SparklesCore";
+import BoxForm from "@/components/forms/boxForm";
 
 //"w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white dark:bg-gray-800 h-min-screen relative"
 export default function Hero() {
@@ -21,9 +22,12 @@ export default function Hero() {
       </Suspense>
       <div className="absolute top-0 left-0  right-0 bottom-0">
 
+        <BoxForm className={"w-[100px] h-[100px] absolute top-1/3 right-0"}></BoxForm>
+
+
         <div className="absolute top-0 left-0  right-0 bottom-0">
 
-          <TiltSquare className={"m-auto max-w-[600px]"}/>
+          <TiltSquare className={"m-auto md:max-w-[600px] max-w-[400px]"}/>
 
         </div>
       </div>
