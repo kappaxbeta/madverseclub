@@ -42,7 +42,7 @@ export default function Hero() {
             MadVerse
           </h1></Badge>
 
-          <Image src={"/logo-madverse.png"} alt={"Madverse"} className={"md:max-w-[500px]"} />
+          <Image width={500} height={300} src={"/logo-madverse.png"} alt={"Madverse"} className={"md:max-w-[500px] w-full"} />
           <h2 className="max-w-lg text-4xl font-bold md:text-5xl">
             It's starts somewhere
           </h2>
