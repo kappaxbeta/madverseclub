@@ -20,29 +20,32 @@ export default function Hero() {
         />
 
       </Suspense>
+    <div className="absolute top-0 left-0  right-0 bottom-0">
+
+
+      <BoxForm className={"w-[100px] h-[100px] absolute top-1/3 right-0"}></BoxForm>
+
+
       <div className="absolute top-0 left-0  right-0 bottom-0">
 
-        <BoxForm className={"w-[100px] h-[100px] absolute top-1/3 right-0"}></BoxForm>
+        <TiltSquare className={"m-auto md:max-w-[600px] max-w-[400px]"}/>
 
-
-        <div className="absolute top-0 left-0  right-0 bottom-0">
-
-          <TiltSquare className={"m-auto md:max-w-[600px] max-w-[400px]"}/>
-
-        </div>
       </div>
+
+    </div>
     <div className="container px-4 md:px-6 ">
 
       <div className="container flex flex-col items-start space-y-4r z-30 transform">
       <div className="space-y-2">
-          <Badge className={"py-0 my-2"}>
+          <Badge className={"py-0 my-2 hidden"}>
             <h1 className="text-2xl sm:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-pink-500 p-4">
             MadVerse
           </h1></Badge>
 
 
+          <img src={"/logo-madverse.png"} className={"md:max-w-[500px]"} />
           <h2 className="max-w-lg text-4xl font-bold md:text-5xl">
-            Experience joyful creation
+            It's starts somewhere
           </h2>
         </div>
 
