@@ -1,9 +1,9 @@
-import Link from "next/link";
 import {Badge} from "@ui/components/badge";
 import TiltSquare from "@/components/forms/tiltSquare";
 import {Suspense} from "react";
 import SparklesCore from "@/components/effects/SparklesCore";
 import BoxForm from "@/components/forms/boxForm";
+import Image from "next/image";
 
 //"w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white dark:bg-gray-800 h-min-screen relative"
 export default function Hero() {
@@ -42,8 +42,7 @@ export default function Hero() {
             MadVerse
           </h1></Badge>
 
-
-          <img src={"/logo-madverse.png"} className={"md:max-w-[500px]"} />
+          <Image src={"/logo-madverse.png"} alt={"Madverse"} className={"md:max-w-[500px]"} />
           <h2 className="max-w-lg text-4xl font-bold md:text-5xl">
             It's starts somewhere
           </h2>
